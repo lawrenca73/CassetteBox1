@@ -1,0 +1,232 @@
+/* top */
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html,
+body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	/*background-image: url(../images/cassetteWindow.jpg);*/ 
+	background-color:ghostwhite;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.container-fluid{
+	margin: 0;
+}
+.header-line{
+	display: grid;
+	color: black;
+	background-color: white;
+	text-align: center;
+	font-family: font-family: 'Cormorant Garamond', serif;
+	font-weight: 700;
+	font-size: 72px;
+}
+.thinLine{
+	border-top: 4px solid black;
+}
+.gapspace{
+	border-bottom: 4px solid whitesmoke;
+}
+.thickerLine{
+	border-bottom: 8px solid black;
+}
+/*
+.header-subline{
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "header-sl header-secondary header-sr";
+
+}
+
+
+.header-left{
+	grid-area: header-left;
+}
+.header-primary{
+	grid-area: header-primary;
+	color: black;
+	background-color: blue;
+	border-style: solid;
+	border-top: 10px;
+	border-left: 10px;
+	border-right: 10px;
+	border-bottom: none;
+	text-align: center;
+	font-family: Old London;
+	font-weight: 700;
+	font-size: 72px;	
+}
+.header-right{
+	grid-area: header-right;
+}
+
+.header-secondary{
+	grid-area: header-secondary;
+	align-self: start;
+	height: 50px;
+	background-image: url("../images/gcleft.jpg");
+	background-size: 50px;
+
+}
+.header-sl{
+	grid-area: header-right;
+}
+.header-sr{
+	grid-area: header-right;
+}
+*/
+.nav-wrapper{
+	display: grid;
+	height: 30px;
+	grid-template-columns:  2fr;
+	grid-template-areas: "menu-main";	
+}
+
+nav{
+	font-size: 2em;
+	font-weight: 400; 
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+	align-content: center;
+	background-color: rgb(253, 253, 253);
+	color: black;
+}
+nav li{
+	padding: 0 1em;
+}
+nav a{
+	text-decoration: none;
+}
+nav a:hover, a:focus{
+
+}
+.central-base{
+	display: grid;
+	height: 700px;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-areas: "central-left central-center central-right"
+}
+.central-left{
+	grid-area: central-left;	
+	grid-template-rows: 1fr 3fr 2fr 2fr;
+	grid-template-areas: "soc-hooks album-entry pay-pal-hooks music-supply"
+}
+.soc-hooks {
+	grid-area: soc-hooks;
+	display: grid;
+	height: 170px;
+	border: 5px solid royalblue;
+	margin: auto;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas:
+	"oneA twoA threeA fourA"
+	"fiveA sixA sevenA eightA" ;
+}
+.soc-hooks-item{
+	display: grid;
+	height: 64px;
+	width: 64px;
+	margin: auto;	
+	object-fit: contain;
+}
+	
+.album-entry{
+	grid-area: album-entry;
+	height: 35%;
+	background-color:rgb(13, 48, 80);
+	color: wheat;
+}
+.pay-pal-hooks{
+	grid-area: pay-pal-hooks;
+	height: 20%;
+	background-color:rgb(23, 29, 34);
+	color: rgb(158, 126, 65);
+}
+.music-supply{
+	grid-area: music-supply;
+	height: 20%;
+	background-color:rgb(70, 6, 44);
+	color: rgb(245, 179, 188);
+}
+.central-center{
+	grid-area: central-center;
+	height: 700px;
+	background-color: white;
+}
+.central-right{
+	grid-area: central-right;
+	grid-template-rows: 1fr 3.3fr 1fr;
+	grid-template-areas: "on-this-day top-list about-content"; 
+}
+.on-this-day{
+	grid-area: on-this-day;
+	height: 25%;
+	background-color:rgb(19, 58, 92);
+	color: wheat;	
+}
+.top-list{
+	grid-area: top-list;
+	height: 50%;
+	background-color:brown;
+	color:chartreuse;
+}
+.about-content{
+	grid-area: about-content;
+	height: 25%;
+	background-color:darkcyan;
+	color: lightgreen;
+}
+.oneA{
+	grid-area: oneA;
+	align-self: center;
+	justify-self: center;
+}
+.twoA{
+	grid-area: twoA;
+	align-self: center;
+	justify-self: center;
+}
+.threeA{
+	grid-row: threeA;
+	align-self: center;
+	justify-self: center;		
+}
+.fourA{
+	grid-area: fourA;
+	align-self: center;
+	justify-self: center;		
+}
+.fiveA{
+	grid-area: fiveA;
+	align-self: center;
+	justify-self: center;		
+}
+.sixA{
+	grid-area: sixA;
+	align-self: center;
+	justify-self: center;
+}
+.sevenA{
+	grid-area: sevenA;
+	align-self: center;
+	justify-self: center;		
+}
+.eightA{
+	grid-area: eightA;
+	align-self: center;
+	justify-self: center;		
+}
+
